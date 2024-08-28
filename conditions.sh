@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "All variables passed to the script: $@"
-echo "Number of variables passed: $#"
-echo "Script name: $0"
-echo "Current working directory: $PWD"
-echo "Home directory of current user: $HOME"
-echo "PID of the script executing now: $$"
-sleep 100 &
-echo "PID of last background command: $!"
+Number=$1
+
+if [Number -gt 20 ] #gt,lt,-ne,-eq,-ge,-le
+then
+    echo "Given number:$Number is greater than 20"
+else 
+    echo "Given number:$Number is less than 20"
+fi
