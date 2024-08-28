@@ -9,21 +9,21 @@ then
    exit1
 fi
 
-dnf install installed gittt
+dnf install installed gitttt
 
 if [ $? -ne 0 ]
 then
-   echo "Git is not installed, going to install it.."
-   dnf install gitttt -y
-   if[ $? -ne 0 ]
-   then
-       echo "Git installation is not success.. check it"
-       exit1
-   else 
-       echo "Git installation is success"
-   fi
+    echo "Git is not installed, going to install it.."
+    dnf install gitttt -y
+    if[ $? -ne 0 ]
+    then
+        echo "Git installation is not success.. check it"
+        exit1
+    else 
+        echo "Git installation is success"
+    fi
 else 
-   echo "Git is already installed,nothing to do.."
+    echo "Git is already installed,nothing to do.."
 fi
 
 
