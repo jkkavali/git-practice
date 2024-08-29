@@ -16,8 +16,8 @@ fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" )
 echo "Files: $FILES"
-
+#line is a reserved word
 while IFS= read file #IFS,internal field seperatpor, empty it will ignore while space.-r is for not to ingore special charecters like /
 do
-    echo "Deleting file: $line"
-    #rm -rf $file
+    echo "Deleting file: $file"
+    #rm -rf $FILES
